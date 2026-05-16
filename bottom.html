@@ -1,0 +1,488 @@
+<!DOCTYPE.html>
+   <html>
+    <head>
+       <br>
+       <meta charset="utf-8" />
+       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Favorite</title>
+        <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+       
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="frameset.css" />
+        
+        <style>
+      /* Modal styles */
+      .modal {
+         display: none; /* Hide the modal by default */
+         position: fixed;
+         z-index: 1;
+         left: 0;
+         top: 0;
+         width: 100%;
+         height: 100%;
+         overflow: auto;
+         background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+      }
+      
+      .modal-content {
+         background-color: #171010;
+         margin: 15% auto;
+         padding: 20px;
+         border: 1px solid #888;
+         width: 85%;
+         max-width: 500px;
+      }
+      
+      .close {
+         color: #aaa;
+         float: right;
+         font-size: 28px;
+         font-weight: bold;
+         cursor: pointer;
+      }
+      
+      /* Feedback button styles */
+      .btn {
+         background-color: #a0916d;
+         color: white;
+         padding: 12px 20px;
+         border: none;
+         border-radius: 4px;
+         cursor: pointer;
+         font-size: 16px;
+      }
+      .btn:hover{
+        transform: scale(1.2);
+        color: black;
+        background: white;
+      }
+      
+      /* Override default button styles for better visual appearance */
+      .btn:focus {
+         outline: none;
+      }
+      
+      /* Star rating styles */
+      .rating {
+         display: block;
+         justify-content: center;
+      }
+      
+      .rating input {
+         display: none;
+      }
+      
+      .rating label {
+         font-size: 40px;
+         color: #888;
+         cursor: pointer;
+      }
+      
+      .rating label:hover,
+      .rating label:hover ~ label,
+      .rating input:checked ~ label {
+         color: #ffcc00;
+      }
+      
+      /* Media query for responsiveness */
+      @media screen and (max-width: 600px) {
+         .modal-content {
+            width: 90%;
+         }
+      }
+   </style>
+    </head>
+      
+
+      <!----home start ----->
+       <section class="home" id="home">
+              <video src="bg2.mp4" autoplay muted loop></video>
+              <div class="overlay"></div>
+               <h1>Hello!</h1>
+               <h2>Welcome to the<br> Home of the Originals  </h2>
+       </section>
+       
+       <!----HOT DRINKS start ----->
+       <section class="drinks" id="hotdrinks">
+           <div class="drinks-img">
+           </div>
+           
+           <div class="drinks-text">
+              <span>Drinks</span>
+              <h2>Hot Drinks</h2>
+              <p>Step into a world of delightful aromas and flavors that will awaken your senses and warm your soul. Our café is a haven for hot beverage enthusiasts, offering a wide range of carefully crafted drinks to satisfy every palate. From expertly brewed coffees and rich, velvety hot chocolates to soothing herbal teas and decadent lattes.</p></div></section>
+           
+           <section class="drinks-con">
+            <div class="drinks-container">
+                <div class="d1">
+                  <div class="d1-img">
+                      <a href="caramel.html" target="main_page"><img src="h1.png"></a>
+                  </div>
+                  <h2>Caramel Latte</h2>
+                  <h3>₱ 195.00</h3>
+                  <i class='bx bx-cart-alt'></i>
+              </div>
+              
+              <div class="drinks-container">
+              <div class="d1">
+                  <div class="d1-img">
+                      <a href="white.html" target="main_page"><img src="h5.png"></a>
+                  </div>
+                  <h2>White Choco Mocha</h2>
+                  <h3>₱ 195.00 </h3>
+                  <i class='bx bx-cart-alt'></i>
+              </div>
+              
+              <div class="drinks-container">
+              <div class="d1">
+                  <div class="d1-img">
+                      <a href="mocha.html" targer="main_page"><img src="h2.png"></a>
+                  </div>
+                  <h2>Cafe Mocha</h2><h3>₱ 185.00</h3>
+                  <i class='bx bx-cart-alt'></i>
+              </div>
+              
+              <div class="drinks-container">
+              <div class="d1">
+                  <div class="d1-img">
+                    <a href="indochine.html" target="main_page"><img src="h3.png"></a>
+                  </div>
+                  <h2>Coffee Indochine</h2>
+                  <h3>₱ 130.00 </h3>
+                  <i class='bx bx-cart-alt'></i>
+              </div>
+              
+              <div class="drinks-container">
+              <div class="d1">
+                  <div class="d1-img">
+                      <a href="cafe.html" target="main_page"><img src="h4.png"></a>
+                  </div>
+                  <h2>Cafe Latte</h2>
+                  <h3>₱ 170.00</h3>
+                  <i class='bx bx-cart-alt'></i>
+              </div>
+              
+            </div>
+       </section>
+       
+       <section class="drinks-con">
+            <div class="drinks-container">
+                <div class="d1">
+                  <div class="d1-img">
+                      <a href="americano.html" target="main_page"><img src="h6.png"></a>
+                  </div>
+                  <h2>Hot Americano</h2>
+                  <h3>₱ 160.00</h3>
+                  <i class='bx bx-cart-alt'></i>
+              </div>
+              
+              <div class="drinks-container">
+              <div class="d1">
+                  <div class="d1-img">
+                      <a href="tea.html" target="main_page"><img src="h7.png"></a>
+                  </div>
+                  <h2>Hot Tea</h2>
+                  <h3>₱ 155.00 </h3>
+                  <i class='bx bx-cart-alt'></i>
+              </div>
+              
+              <div class="drinks-container">
+              <div class="d1">
+                  <div class="d1-img">
+                      <a href="hotchoco.html" target="main_page"><img src="h8.png"></a>
+                  </div>
+                  <h2>Hot Chocolate</h2>
+                  <h3>₱ 175.00</h3>
+                  <i class='bx bx-cart-alt'></i>
+              </div>
+              
+              <div class="drinks-container">
+              <div class="d1">
+                  <div class="d1-img">
+                      <a href="brewed.html" target="main_page"><img src="h9.png"></a>
+                  </div>
+                  <h2>Brewed Coffee</h2>
+                  <h3>₱ 145.00 </h3>
+                  <i class='bx bx-cart-alt'></i>
+              </div>
+              
+              <div class="drinks-container">
+              <div class="d1">
+                  <div class="d1-img">
+                      <a href="cappuccino.html" target="main_page"><img src="h10.png"></a>
+                  </div>
+                  <h2>Cappuccino</h2>
+                  <h3>₱ 170.00</h3>
+                  <i class='bx bx-cart-alt'></i>
+              </div>
+              
+            </div>
+       </section>
+       
+       <!--- Cold DRINKS start ----->
+       <section class="drinks" id="colddrinks">
+           <div class="drinks-img">
+           </div>
+           
+           <div class="drinks-text">
+              <h2>Cold Drinks</h2>
+              <p> Savor our handcrafted iced coffees, tantalizing iced teas, and invigorating fruit juices. Indulge in a burst of flavors that will leave you refreshed and delighted.</p></div></section>
+              
+            
+        <section class="drinks-con">
+            <div class="drinks-container">
+                <div class="d1">
+                  <div class="d1-img">
+                      <a href="hcafe.html" target="main_page"><img src="c1.png"></a>
+                  </div>
+                  <h2>Hershey's Cafe</h2>
+                  <h3>₱ 240.00</h3>
+                  <i class='bx bx-cart-alt'></i>
+              </div>
+              
+              <div class="drinks-container">
+              <div class="d1">
+                  <div class="d1-img">
+                      <a href="hclassic.html" target="main_page"><img src="c2.png"></a>
+                  </div>
+                  <h2>Hershey's Classic</h2>
+                  <h3>₱ 230.00 </h3>
+                  <i class='bx bx-cart-alt'></i>
+              </div>
+              
+              <div class="drinks-container">
+              <div class="d1">
+                  <div class="d1-img">
+                      <a href="hmocha.html" target="main_page"><img src="c3.png"></a>
+                  </div>
+                  <h2>Hershey's Mocha</h2>
+                  <h3>₱ 245.00</h3>
+                  <i class='bx bx-cart-alt'></i>
+              </div>
+              
+              <div class="drinks-container">
+              <div class="d1">
+                  <div class="d1-img">
+                      <a href="reeseschoco.html" target="main_page"><img src="c5.png"></a>
+                  </div>
+                  <h2>Reeses Choco </h2>
+                  <h3>₱ 275.00 </h3>
+                  <i class='bx bx-cart-alt'></i>
+              </div>
+              
+              <div class="drinks-container">
+              <div class="d1">
+                  <div class="d1-img">
+                      <a href="hfrappe.html" target="main_page"><img src="c6.png"></a>
+                  </div>
+                  <h2>Hershey's Frappe</h2>
+                  <h3>₱ 245.00</h3>
+                  <i class='bx bx-cart-alt'></i>
+              </div>
+              
+            </div>
+       </section>
+       
+       
+       <!----PASTA start ----->
+       <section class="food" id="pasta">
+           <div class="heading">
+               <span>Foods</span>
+               <h2>Pasta Menu</h2>
+           </div>
+           
+           <div class="food-container">
+              <div class="f1">
+                  <div class="f1-img">
+                      <a href="arrabbiata.html" target="main_page"><img src="p1.png"></a>
+                  </div>
+                  <h2>Arrabbiata Penne</h2>
+                  <h3>Italian Style</h3>
+                  <span>₱ 290.00</span>
+                  <i class='bx bx-cart-alt'></i>
+              </div>
+              
+               <div class="f1">
+                  <div class="f1-img">
+                      <a href="alfredo.html" target="main_page"><img src="p2.png"></a>
+                  </div>
+                  <h2>Chicken Alfredo Penne</h2>
+                  <h3>Creamy Sauce</h3>
+                  <span>₱ 280.00</span>
+                  <i class='bx bx-cart-alt'></i>
+              </div>
+              
+               <div class="f1">
+                  <div class="f1-img">
+                      <a href="SGP.html" target="main_page"><img src="p3.png"></a>
+                  </div>
+                  <h2>Sausage & Garlic Pasta</h2>
+                  <h3>Cooked In Olive Oil</h3>
+                  <span>₱ 310.00</span>
+                  <i class='bx bx-cart-alt'></i>
+              </div>
+           </div>
+       </section>
+       
+       <!----Sandwich start ----->
+       <section class="food" id="sandwich">
+           <div class="heading">
+               <h2>Sandwich Menu</h2>
+           </div>
+           
+           <div class="food-container">
+              <div class="f1">
+                  <div class="f1-img">
+                      <a href="sw1.html" target="main_page"><img src="san1.png"></a>
+                  </div>
+                  <h2>Clubhouse Sandwich</h2>
+                  <span>₱ 280.00</span>
+                  <i class='bx bx-cart-alt'></i>
+              </div>
+              
+               <div class="f1">
+                  <div class="f1-img">
+                      <a href="sw2.html" target="main_page"><img src="san2.png"></a>
+                  </div>
+                  <h2>Tuna Melt Sandwich</h2>
+                  <span>₱ 295.00</span>
+                  <i class='bx bx-cart-alt'></i>
+              </div>
+              
+               <div class="f1">
+                  <div class="f1-img">
+                      <a href="sw3.html" target="main_page"><img src="san3.png"></a>
+                  </div>
+                  <h2>Bacon Cheese Sandwich</h2>
+                  <span>₱ 310.00</span>
+                  <i class='bx bx-cart-alt'></i>
+              </div>
+           </div>
+       </section>
+       
+       <!--- service start ----->
+       <section class="service" id="service">
+           <div class="heading">
+              <span>Services</span>
+              <h2>How To Order?</h2>
+           </div>
+           
+           <div class="service-container">
+              <div class="s-box">
+                  <img src="s1.png">
+                  <h3>Place Order</h3>
+                  <p>Step 1: Choose your order and click the desired photo
+                  <br>Step 2: Click the "+" and "-" button to apply the quantity you want
+                  <br>Step 3: Add to cart (for multiple orders)
+                  <br>Step 4: Place Order!</p>
+              </div>
+              
+              <div class="s-box">
+                  <img src="s2.png">
+                  <h3>Delivery</h3>
+                  <p>Serving availabe in:
+                  <br> Grab, Food Panda, Lalamove,
+                  <br>and more!</p>
+              </div>
+              
+              <div class="s-box">
+                  <img src="s3.png">
+                  <h3>Delivered</h3>
+                  <p>After receiving the food,
+                  <br> Kindly write a review and please rate your experience with Caffeine Dreams.
+                  <br> Your review is very much appreciated!</p>
+           </div>
+       </section>
+       
+       <!---- call to action ----->
+       <section class="cta">
+          <h2>We always serve warm food for <br> your warm smile! </h2>
+          <a href="#" class="btn" onclick="openModal()">Rate Us!</a>
+          
+          <div id="modal" class="modal">
+      <div class="modal-content">
+         <span class="close" onclick="closeModal()">&times;</span>
+         <h2>Feedback</h2>
+         <p>Thank you for visiting our website. Please rate your experience:</p>
+         <div class="rating">
+            <input type="radio" id="star5" name="rating" value="5" />
+            <label for="star5">&#9733;</label>
+            <input type="radio" id="star4" name="rating" value="4" />
+            <label for="star4">&#9733;</label>
+            <input type="radio" id="star3" name="rating" value="3" />
+            <label for="star3">&#9733;</label>
+            <input type="radio" id="star2" name="rating" value="2" />
+            <label for="star2">&#9733;</label>
+            <input type="radio" id="star1" name="rating" value="1" />
+            <label for="star1">&#9733;</label>
+         </div>
+         <!-- Add your feedback form or content here -->
+      </div>
+   </div>
+   
+   <script>
+      function openModal() {
+         document.getElementById("modal").style.display = "block";
+      }
+      
+      function closeModal() {
+         document.getElementById("modal").style.display = "none";
+      }
+   </script>
+       </section>
+       
+       <!---- footer start ----->
+       <section id="contact">
+          <div class="footer">
+              <div class="main">
+                  <div class="col">
+                      <h4>Website Links</h4>
+                      <ul>
+                          <li><a href="#home">Home</a></li>
+                          <li><a href="#hotdrinks">Drinks</a></li>
+                          <li><a href="#pasta">Foods</a></li>
+                          <li><a href="#service">Services</a></li>
+                          <li><a href="#contact">Contact Us</a></li>
+                      </ul>
+                  </div>
+                  
+                  <div class="col">
+                      <h4>Menu</h4>
+                      <ul>
+                          <li><a href="#hotdrinks">Hot Drinks</a></li>
+                          <li><a href="#colddrinks">Cold Drinks</a></li>
+                          <li><a href="#pasta">Pasta</a></li>
+                          <li><a href="#sandwich">Sandwich</a></li>
+                      </ul>
+                  </div>
+                  
+                  <div class="col">
+                      <h4>Help and Rate Us</h4>
+                      <ul>
+                          <li><a href="#cta">Feedback</a></li>
+                          <li><a href="sugg.html" target="main_page">Suggestion</a></li>
+                      </ul>
+                  </div>
+                  
+                  <div class="col">
+                      <h4>Contact Us</h4>
+                      <div class="social">
+                          <a href="https://www.facebook.com/profile.php?id=100092865735002" Target="_blank"><i class='bx bxl-facebook'></i></a>
+                          <a href="#"><i class='bx bxl-instagram' ></i></a>
+                          <a href="#"><i class='bx bxl-twitter'></i></a>
+                          <a href="#"><i class='bx bxl-youtube' ></i></a>
+                      </div>
+                      
+                    <div class="copyright">
+                     <h6>Images Copyright reserved to © Coffee Project.</h6>
+                     <h6>No Copyright intended. For school purposes only.</h6>
+                      </div>
+                  </div>
+              </div>
+          </div>
+       </section>
+    </body>
+</html>
